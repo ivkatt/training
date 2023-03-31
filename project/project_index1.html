@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Елтор ЕООД</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    html {
+
+        font-family: "roboto", sans-serif;
+        color: rgb(76, 74, 74);
+        font-size: 10px;
+
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 2%;
+        width: 100rem;
+        background-color: #240e72;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 200px 100px 100px 100px 100px;
+        gap: 10px;
+
+    }
+
+    .container-header {
+        display: grid;
+        height: 15vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: auto;
+        /*position: relative;*/
+        background-color: #240e72;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .header {
+        height: 120vh;
+        width: auto;
+        position: relative;
+        background-image: linear-gradient(rgba(232, 220, 231, 0.8),
+                rgba(232, 220, 231, 0.8)),
+            url(img/Blog-Thumbnail-3.png);
+
+        background-size: cover;
+        color: #240e72;
+        display: grid;
+        grid-template-columns: 200px 800px 1fr;
+        grid-template-rows: 100px 400px 400px;
+        grid-template-areas: "header  header  header"
+            "header1 header2 header3"
+            "header1 header4 header3";
+    }
+
+
+    h3 {
+        font-size: 3.6rem;
+        margin-bottom: 4.8rem;
+    }
+
+    section {
+        padding: 9.6rem 0;
+        background-color: #f7f7f7;
+    }
+
+    nav {
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3.2rem;
+    }
+
+    h1 {
+        /*display: flex;
+        justify-content: flex-start;*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8rem;
+        grid-area: header2;
+        margin-top: 3.2rem;
+        color: #fff;
+        line-height: 1.05;
+    }
+
+    h2 {
+
+        font-family: cursive;
+        font-size: 6rem;
+        grid-area: header4;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 4.8rem;
+    }
+
+
+    /*.inner-header {
+        width: 100%;
+
+    }*/
+
+    /*.btn:link,
+    .btn:visited {
+        background: #f6fba0;
+
+        font-size: 2rem;
+        font-weight: 600;
+        border-radius: 0.9rem;
+        font-style: normal;
+        color: #fff;
+        /* display: inline-block;
+        text-decoration: none;
+        padding: 2rem 1.6rem;
+    }*/
+
+    .text1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        grid-area: 1 /1;
+        color: #fff;
+    }
+
+    .text2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        grid-area: 2 /1;
+        color: #fff;
+    }
+
+    .text3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        grid-area: 3 /1;
+        color: #fff;
+    }
+
+    .text4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        grid-area: 4 /1;
+        color: #fff;
+    }
+
+    .text5 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        grid-area: 5 /1;
+        color: #fff;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <div>logo</div>
+            <li> <a href="#mailto">eltor.eood@gmail.com</a></li>
+            <li> <a href="#callto">0884 937 418</a></li>
+        </div>
+        <div class="header">
+            <h1>
+                <div>Сервиз за</div>
+                <div>битова техника</div>
+                <div>гр. Варна</div>
+            </h1>
+            <h2>
+                <div>052 603 815</div>
+                <div>0884 937 418</div>
+            </h2>
+        </div>
+    </header>
+
+
+
+    <!--<nav class="container">
+        <a class="btn" href="#">Обади се!</a>
+
+    </nav>-->
+    <section>
+        <div class="container">
+
+            <!--<h3>Сервизът ни предлага следните услуги:</h3>-->
+
+            <div class="text1">Продажба, доставка, монтаж, ремонт и периодична профилактика на обемни и проточни бойлери
+                с марките Tesy, Елдом, Ariston и др.</div>
+            <div class="text2">Гаранционна поддръжка на всички видове дребни битови електроуреди Tesy, Kenwood,
+                Delonghi, Ariette, Arnica и др.> </div>
+            <div class="text3">Ремонт на кафеавтомати и кафемашини с марките Delonghi, Saeco, Philips, Jura, Bosh,
+                Krups, Lavazza, Gaggia, Siemens и др.
+            </div>
+            <div class="text4">Ремонт на отоплителни уреди – конвектори, радиатори, калорифери, вентилаторни печки.
+            </div>
+            <div class="text5">Ремонт на кухненски роботи, микровълнови фурни, котлони, ютии и гладачни системи.</div>
+
+
+
+            Спазваме високи стандарти за качество на предлаганите услуги на конкурентни цени.
+            Подхождаме с ангажираност и професионализъм към всеки проблем.
+            Стараем се да предоставим на клиентите решение според необходимостта в най-кратък срок.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
