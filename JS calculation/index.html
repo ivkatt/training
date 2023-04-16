@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function calc() {
+            var a = document.getElementById("value1").value
+            var b = document.getElementById("value2").value
+            var c = document.getElementById("value3").value
+
+
+
+            var result = sum(a, b, c);
+            window.alert(result);
+        };
+        function sum(a, b, c) {
+            var result = parseInt(a) + parseInt(b) + parseInt(c);
+            return result;
+        }
+    </script>
+
+    <input type="number" id="value1" />
+    <input type="number" id="value2" />
+    <input type="number" id="value3" />
+
+    <button onclick="calc()">calculate</button>
+</body>
+
+</html>
