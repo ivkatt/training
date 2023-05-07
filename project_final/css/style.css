@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-size: 62.5%;
+
+}
+
+.head {
+
+    height: 15vh;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);*/
+    width: auto;
+    position: relative;
+    background-color: #36486b;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    margin-right: 1%;
+    font-size: 2.6rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    height: 120vh;
+    width: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(232, 220, 231, 0.8),
+            rgba(232, 220, 231, 0.8)),
+        url(../img/Blog-Thumbnail-3.png);
+
+    background-size: cover;
+    color: #36486b;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 500px 1fr;
+    grid-template-areas: "header1  header"
+        "header1 header2";
+}
+
+h3 {
+    font-size: 2.6rem;
+    margin-bottom: 4.8rem;
+}
+
+/*section {
+    padding: 9.6rem 0;
+    background-color: #f7f7f7;
+}*/
+
+/*     nav {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3.2rem;
+} */
+
+h1 {
+    /*display: flex;
+    justify-content: flex-start;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8rem;
+    text-shadow: 2px 2px 4px #36486b;
+    grid-area: header;
+    margin-top: 3.2rem;
+    color: #fff;
+    line-height: 1.05;
+}
+
+h2 {
+
+    font-family: cursive;
+    font-size: 8rem;
+    grid-area: header2;
+    color: #fff;
+    text-shadow: 2px 2px 4px #36486b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.section {
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 120rem;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-size: 0.5rem;*/
+    grid-area: 1 /1;
+    color: #36486b;
+
+}
+
+/*  .grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+} */
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 4.5rem;
+}
+
+.grid-2-colms {
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.step-text {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    padding: 3rem;
+}
+
+.step-text a {
+    color: black;
+}
+
+.step-img {
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.img-box {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* 
+.step-img-box {
+    background-color: transparent;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.img-box::before,
+.img-box::after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-box::before {
+    content: " ";
+    width: 60%;
+    /* height: 20%;*/
+    /* 60% of parent's width */
+    padding-bottom: 60%;
+    background-color: #F3DEBA;
+    /* background-color: #FAEDCD;*/
+    z-index: -1;
+}
+
+.img-box::after {
+    content: " ";
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #36486b;
+    z-index: -1;
+}
+
+.grid-6-colms {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.grid-3-colms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image {
+    width: auto;
+    height: 100%;
+
+}
+#demo1 {
+    font-size: 2.2rem;
+    line-height: 1.8;
+
+
+}
+
+/* .btn:link,
+.btn:visited {
+    background: #f6fba0;
+
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 0.9rem;
+    font-style: normal;
+    color: #fff;
+    /* display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1.6rem;
+}*/
+.partners {
+    margin-bottom: 4.8rem;
+}
+
+footer {
+    background-color: #36486b;
+    padding: 1.4rem;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.contacts {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+}
